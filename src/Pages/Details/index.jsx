@@ -29,7 +29,7 @@ export function Details() {
           <Button_links>
             <CoffeeOptions />
             <div className="link2">
-              <LinksProduto imagemUrl="../../../imagens/maquinas.png">
+              <LinksProduto imagemUrl="../../Img/3corCerrado.png">
                 <h1>Máquinas</h1>
               </LinksProduto>
               <LinksProduto imagemUrl="../../../imagens/kit.png">

@@ -47,7 +47,7 @@ export function User() {
       <main>
     
         <UserInfo>
-          <img src="../../../imagens/userImage.png" alt="" />
+          <img src="../../../imagens/Foto user.png" alt="" />
           <div className="info">
               <p>Rodrigo Arebbiett</p>
               <p>RodrigoAre@gmail.com</p>
