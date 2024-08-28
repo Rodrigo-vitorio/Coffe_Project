@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <Globalstyles/>
-      < Details />
+      < Carrinho />
     </ThemeProvider>
   </React.StrictMode>,
 )

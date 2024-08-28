@@ -7,13 +7,11 @@ import { TiShoppingCart } from "react-icons/ti";
 import {DropDown} from "../DropDown"
 
 
-
-
 export function Header() {
-  const [menuActive, setMenuActive] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuActive(!menuActive);
+  const handleSearchClick = () => {
+    setIsExpanded(!isExpanded); // Inverte o estado atual
   };
 
   return (
@@ -22,10 +20,12 @@ export function Header() {
         <Logo>
           <img src={LogoImg} alt="Logo da empresa" />
         </Logo>
-        <Bar>
+        <Bar></Bar>
+        <Search
+          className={`search-container ${isExpanded ? "active" : ""}`}
+          onClick={handleSearchClick}
         
-        </Bar>
-        <Search>
+        >
           <input
             type="text"
             placeholder="Buscar produtos, marcas e muito mais...."

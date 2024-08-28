@@ -5,7 +5,7 @@ import { BsInfoSquare, BsClockHistory } from "react-icons/bs";
 import { GrShieldSecurity } from "react-icons/gr";
 import { MdOutlinePrivacyTip } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
-import { DropNav } from "../../Components/DropNav";
+
 
 
 

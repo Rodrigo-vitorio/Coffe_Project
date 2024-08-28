@@ -5,7 +5,7 @@ export const Container = styled.div`
   height: 100vh;
 
   display: grid;
-  grid-template-rows: 140px auto;
+  grid-template-rows: 122px auto;
   grid-template-areas: "header" "content";
   > main {
     grid-area: content;
@@ -54,7 +54,7 @@ export const Content = styled.div`
     transition: background-color 0.3s;
     display: flex;
     &:hover{
-      transform: scale(1.1);
+      transform: scale(1.05);
       transition: cubic-bezier(0.23, 1, 0.320, 1)1s;
     }
   }

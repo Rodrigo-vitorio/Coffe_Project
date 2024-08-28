@@ -15,5 +15,6 @@ export default  {
         MARVEL: `"Marvel", sans-serif`,
         FRAUNCES: `"Fraunces", serif`,
         ROBOTO: `"Roboto", sans-serif`,
+        OSWALD:`"Oswald", sans-serif`,
     }
 }

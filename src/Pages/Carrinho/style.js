@@ -3,108 +3,131 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-  color: black;
 
   display: grid;
   grid-template-rows: 120px auto;
   grid-template-areas:
     "header"
     "content";
-  
   > main {
     grid-area: content;
   }
 `;
 
 export const Content = styled.div`
-  padding: 10px 20px;
+  color: black;
 `;
 
-export const CarrinhoProd = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 1fr; 
-  grid-template-rows: auto 1fr ; 
-  grid-template-areas:
-    "subtotal total"
-    "subtotal total"
-  ; /* Total no topo e Subtotais embaixo */
-  gap: 20px; /* Espaçamento entre itens */
-`;
-
+export const CarrinhoProd = styled.div``;
 export const Subtotal = styled.div`
-grid-area: subtotal;
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
+  background: white;
+  width: 65vw;
   display: flex;
-  align-items: center;
-  gap: 10px; 
- 
-
-  > img {
-    width: 100px; 
-  }
+  padding: 40px;
 
   .info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
-
     > h3 {
-      font-size: 16px; 
+      font-size: 22px;
+      font-family: ${({ theme }) => theme.FONTS.OSWALD};
+      font-weight: 400;
+      margin-bottom: 5px;
     }
-
     > h2 {
-      font-size: 20px; 
-      font-family: ${({ theme }) => theme.FONTS.MARVEL};
+      font-size: 22px;
+      font-family: ${({ theme }) => theme.FONTS.OSWALD};
+      font-weight: 300;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  > img {
+    width: 30%;
+    height: 100%;
+    @media (max-width: 768px) {
+    width: 50%;
+    
+    
+  }
+  }
+
+  .info2 {
+    .quantity {
+      border: 1px solid ${({ theme }) => theme.COLORS.BROWN_800};
+      width: 88px;
+      margin-bottom: 30px;
+    }
+    .bttn {
+      padding: 0 10px;
+      margin: 5px;
+      font-size: 20px;
+      border: none;
+      background: transparent;
+    }
+    .add {
+      color: green;
+    }
+    button {
+      padding: 7px;
+      font-family: "Roboto", sans-serif;
+      margin-right: 20px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      &:hover {
+        transform: scale(1.1);
+      }
+      @media (max-width: 768px) {
+        margin-top: 5px;
+      }
     }
 
-    .info2 {
-      display: flex;
-      flex-direction: column;
-      gap: 10px; 
-
-      .quantity {
-        display: flex;
-        align-items: center;
-        gap: 10px; /* Espaçamento entre os botões e o contador */
-      }
+    button.compartilhar:hover {
+      background-color: ${({ theme }) => theme.COLORS.BLUE_600};
+      color: white;
+    }
+    button.excluir:hover {
+      background-color: #ff0000;
+      color: white;
     }
   }
 `;
-
 export const Total = styled.div`
-grid-area: total;
-
+  padding: 20px;
+  width: 25vw;
   background: white;
+  height: 100%;
   border-radius: 5px;
-  padding: 10px;
-  text-align: center;
-  grid-area: 1 / 2 / 2 / 3;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 20px;
+  }
 
   > a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
-
+    gap: 10px;
+    font-size: 17px;
     > svg {
-      font-size: 52px;
-    }
-
-    > p {
-      font-size: 16px;
-      text-align: justify;
-      margin-left: 5px;
+      font-size: 50px;
     }
   }
-
   > p {
-    font-size: 16px;
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+    gap: 20px;
+  }
+`;
+export const CarrinhoG = styled.div`
+  display: flex;
+  justify-content: space-between;
 
-    &:nth-child(5) {
-      margin-bottom: 10px;
-    }
+  margin: 20px;
+  @media (max-width: 768px) {
+    display: block;
   }
 `;

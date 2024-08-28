@@ -29,7 +29,7 @@ export function Details() {
           <Button_links>
             <CoffeeOptions />
             <div className="link2">
-              <LinksProduto imagemUrl="../../Img/3corCerrado.png">
+              <LinksProduto imagemUrl="../../../imagens/maquinas.png">
                 <h1>Máquinas</h1>
               </LinksProduto>
               <LinksProduto imagemUrl="../../../imagens/kit.png">
@@ -51,22 +51,22 @@ export function Details() {
             <Produtos
               imagemUrl="../../../imagens/cafefazendaReserva.png"
               description="Café Fazenda Floresta Especial Reserva 250g Torrado em grãos"
-              price1="R$ 100,00"
+              price1="R$ 19,00"
               discount="R$ 20,00"
               buttonTitle="Compre Agora"
             ></Produtos>
             <Produtos
               imagemUrl="../../../imagens/classicoFazenda1k.png"
               description="Café Fazenda Floresta Especial Clássico em Grãos 1kg"
-              price1="R$ 100,00"
+              price1="R$ 17,00"
               discount="R$ 20,00"
               buttonTitle="Compre Agora"
             ></Produtos>
             <Produtos
               imagemUrl="../../../imagens/cafearara-moidoFazenda.png"
               description="Café Fazenda Floresta Especial Arara 250g Torrado e moído"
-              price1="R$ 100,00"
-              discount="R$ 20,00"
+              price1="R$ 20,00"
+              discount="R$ 21,00"
               buttonTitle="Compre Agora"
             ></Produtos>
 

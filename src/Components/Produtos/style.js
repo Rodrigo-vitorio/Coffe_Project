@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-  width: 300px;
-  height: 455px;
+  width: 100%;
+  height: 100%;
   background: transparent;
   border: none;
+  border: 1px double #dddddd;
   margin: 40px auto;
+  padding: 10px;
 
   > p {
     font-family: ${({ theme }) => theme.FONTS.ABHAYA_LIBRE};

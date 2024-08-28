@@ -2,16 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.header`
   grid-area: header;
-  height: 120px;
+  height: 122px;
   width: 100%;
   border-bottom: 1px solid ${({ theme }) => theme.COLORS.BROWN_700};
   display: flex;
   flex-direction: column;
 
-
   @media (max-width: 768px) {
-    height: 120px;
-    background: red;
+    height: 94px;
+
   }
 
   @media (max-width: 480px) {
@@ -20,11 +19,11 @@ export const Container = styled.header`
     background: blue;
   }
 
-  .top{
+  .top {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding:0 40px;
+    padding: 0 40px;
   }
 `;
 
@@ -98,7 +97,11 @@ export const Search = styled.div`
   margin: 0 10px;
 
   @media (max-width: 768px) {
-    width: 30%;
+    width: 50%;
+    &.active {
+      flex: 100%;
+    }
+   
   }
 
   @media (max-width: 480px) {
@@ -136,21 +139,16 @@ export const Login = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 480px) {
-    font-size: 16px;
-  }
-
   > svg {
     font-size: 50px;
     color: white;
-
     @media (max-width: 768px) {
-      font-size: 40px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 35px;
-    }
+        font-size: 2rem;
+        margin: 0 10px;
+        &:hover{
+          color:  ${({ theme }) => theme.COLORS.BROWN_700};
+        }
+      }
   }
 
   > .user {
@@ -160,15 +158,15 @@ export const Login = styled.div`
     width: 200px;
     padding: 10px;
 
-    @media (max-width: 480px) {
-      width: 100%;
+    @media (max-width: 768px) {
+      display: none;
     }
 
     > h1 {
       font-size: 25px;
 
       @media (max-width: 768px) {
-        font-size: 20px;
+        display: none;
       }
 
       @media (max-width: 480px) {
@@ -185,12 +183,10 @@ export const Login = styled.div`
         margin-left: 5px;
 
         @media (max-width: 768px) {
-          font-size: 14px;
+          display: none;
         }
 
-        @media (max-width: 480px) {
-          font-size: 12px;
-        }
+
 
         > a {
           text-decoration: none;

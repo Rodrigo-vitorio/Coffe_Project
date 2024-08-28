@@ -22,7 +22,12 @@ export const Content = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    margin: 0px 10px;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+
+ 
+  
+    margin: 30px 10px;
     >img{
       width: 90%;
       height: 90%;
