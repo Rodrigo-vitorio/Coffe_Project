@@ -14,6 +14,8 @@ export const Container = styled.button`
 
   > a {
     color: white;
+    text-align: center;
+    white-space: nowrap;
   }
 
   &:disabled {

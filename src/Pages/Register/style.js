@@ -16,6 +16,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
+  margin-top: 20px;
   .formulario {
     display: flex;
     justify-content: center;
@@ -25,11 +26,14 @@ export const Content = styled.div`
     margin-bottom: 100px;
   }
   .container {
-    background-color: #4D4D4D;
+    background-color: #4d4d4d;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 30%;
+    @media (max-width: 768px) {
+      width: 80%;
+    }
   }
 
   h1 {
@@ -53,9 +57,9 @@ export const Content = styled.div`
     cursor: pointer;
     transition: background-color 0.3s;
     display: flex;
-    &:hover{
+    &:hover {
       transform: scale(1.1);
-      transition: cubic-bezier(0.23, 1, 0.320, 1)1s;
+      transition: cubic-bezier(0.23, 1, 0.32, 1) 1s;
     }
   }
 
@@ -94,7 +98,7 @@ export const Content = styled.div`
     margin: 20px auto;
     font-size: 14px;
     color: white;
-    width: 340px;
+    width: 100%;
   }
 
   .sign-in:hover {
@@ -109,7 +113,7 @@ export const Content = styled.div`
   }
 
   .signup a {
-    color: #4682B4;
+    color: #4682b4;
     text-decoration: none;
   }
 

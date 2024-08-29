@@ -1,30 +1,42 @@
 import styled from "styled-components";
 
-export const Container = styled.button`
-  width: 200px; /* ajuste conforme necessário */
-  height: 300px; /* ajuste conforme necessário */
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: transparent;
-  border: none;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.75);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+  
 `;
-export const Imagem = styled.div`
-  width: 200px; /* ajuste conforme necessário */
-  height: 200px; /* ajuste conforme necessário */
+
+export const Imagem = styled.img`
+  width: 200px;
+  height: 200px;
   background-image: url(${(props) => props.imagemUrl});
   background-size: cover;
   background-position: center;
-  margin-bottom: 15px; /* espaço entre imagem e texto */
-  border: none;
   border-radius: 50%;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
-  &:hover{
-    transform: scale(1.1);
-   }
+  margin-bottom: 15px; /* espaço entre imagem e texto */
 `;
+
 export const Texto = styled.div`
-  text-align: center;
-  font-size: 12px; /* ajuste conforme necessário */
-  color: red;
+  > h1 {
+    font-family: ${({ theme }) => theme.FONTS.OSWALD};
+    font-size: 22px;
+    color: black;
+    padding: 2px;
+    text-align: center;
+    font-weight: 500;
+    
+  }
 `;

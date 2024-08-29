@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Header } from "../../Components/Header";
 import { Footer } from "../../Components/Footer";
-import { Container, Content, Preparation } from "./style";
+import { Container, Content, Preparation,DescricaoProd } from "./style";
 import { Caracteristicas } from "../../Components/Caracteristicas";
 import { CoffePass } from "../../Components/CoffePass";
 // icones usados
@@ -72,61 +72,63 @@ export function ShowProduct() {
       <Header />
       <main>
         <Content>
-          <div className="image">
-            <img src={produtoSelecionado.imagem} alt="Imagem do produto" />
-          </div>
-          <div className="info">
-            <div className="infoName">
-              <h3>{produtoSelecionado.nome}</h3>
-              <a href="">
-                <PiShareNetworkDuotone />
-              </a>
-              <a href="">
-                <MdFavoriteBorder />
-              </a>
+          <DescricaoProd>
+            <div className="image">
+              <img src={produtoSelecionado.imagem} alt="Imagem do produto" />
             </div>
-            <div className="price">
-              <h1>{produtoSelecionado.preco}</h1>
-              <div className="desconto">
-                <CiMoneyBill />
-                <p>2x de 10,00 sem juros</p>
-                <CiCreditCard1 />
-                <p>5% de desconto no pix</p>
+            <div className="info">
+              <div className="infoName">
+                <h3>{produtoSelecionado.nome}</h3>
+                <a href="">
+                  <PiShareNetworkDuotone />
+                </a>
+                <a href="">
+                  <MdFavoriteBorder />
+                </a>
               </div>
-            </div>
-            <a href="">Ver formas de pagamento</a>
-            <div className="stars">
-              <IoIosStar />
-              <IoIosStar />
-              <IoIosStar />
-              <IoIosStar />
-              <IoIosStarHalf />
-              <p>(92)</p>
-            </div>
-            <div className="quant">
-              <div className="quantity">
-                <button ref={minusButtonRef}>-</button>
-                <span>{quantity}</span>
-                <button ref={plusButtonRef}>+</button>
+              <div className="price">
+                <h1>{produtoSelecionado.preco}</h1>
+                <div className="desconto">
+                  <CiMoneyBill />
+                  <p>2x de 10,00 sem juros</p>
+                  <CiCreditCard1 />
+                  <p>5% de desconto no pix</p>
+                </div>
               </div>
-              <button className="add-to-cart">Adicionar ao carrinho</button>
+              <a href="">Ver formas de pagamento</a>
+              <div className="stars">
+                <IoIosStar />
+                <IoIosStar />
+                <IoIosStar />
+                <IoIosStar />
+                <IoIosStarHalf />
+                <p>(92)</p>
+              </div>
+              <div className="quant">
+                <div className="quantity">
+                  <button ref={minusButtonRef}>-</button>
+                  <span>{quantity}</span>
+                  <button ref={plusButtonRef}>+</button>
+                </div>
+                <button className="add-to-cart">Adicionar ao carrinho</button>
+              </div>
+              <p>{produtoSelecionado.descricao}</p>
             </div>
-            <p>{produtoSelecionado.descricao}</p>
-          </div>
-          <div className="frete">
-            <h1>Meios de envio</h1>
-            <div className="calcular">
-              <input placeholder="Seu CEP" type="text" />
-              <button>Calcular</button>
+            <div className="frete">
+              <h1>Meios de envio</h1>
+              <div className="calcular">
+                <input placeholder="Seu CEP" type="text" />
+                <button>Calcular</button>
+              </div>
+              <a
+                href="https://www2.correios.com.br/sistemas/buscacep/buscacep.cfm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Não sei meu CEP
+              </a>
             </div>
-            <a
-              href="https://www2.correios.com.br/sistemas/buscacep/buscacep.cfm"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Não sei meu CEP
-            </a>
-          </div>
+          </DescricaoProd>
           <div className="infoCaract">
             <div className="caract">
               {produtoSelecionado.caracteristicas.map(

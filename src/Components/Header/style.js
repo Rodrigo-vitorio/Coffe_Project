@@ -10,13 +10,11 @@ export const Container = styled.header`
 
   @media (max-width: 768px) {
     height: 94px;
-
   }
 
   @media (max-width: 480px) {
     height: 80px;
     padding: 0 10px;
-    background: blue;
   }
 
   .top {
@@ -101,7 +99,6 @@ export const Search = styled.div`
     &.active {
       flex: 100%;
     }
-   
   }
 
   @media (max-width: 480px) {
@@ -143,12 +140,12 @@ export const Login = styled.div`
     font-size: 50px;
     color: white;
     @media (max-width: 768px) {
-        font-size: 2rem;
-        margin: 0 10px;
-        &:hover{
-          color:  ${({ theme }) => theme.COLORS.BROWN_700};
-        }
+      font-size: 2rem;
+      margin: 0 10px;
+      &:hover {
+        color: ${({ theme }) => theme.COLORS.BROWN_700};
       }
+    }
   }
 
   > .user {
@@ -185,8 +182,6 @@ export const Login = styled.div`
         @media (max-width: 768px) {
           display: none;
         }
-
-
 
         > a {
           text-decoration: none;

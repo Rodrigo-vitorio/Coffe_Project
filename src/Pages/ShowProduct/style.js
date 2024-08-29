@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-height: 100vh;
+  height: 100vh;
   display: grid;
   grid-template-rows: 120px auto;
   grid-template-areas: "header" "content";
@@ -10,17 +10,74 @@ height: 100vh;
     grid-area: content;
     overflow-y: scroll;
     overflow-x: hidden;
-    
   }
 `;
 
 export const Content = styled.div`
+  grid-area: info2;
+  margin: auto;
+
+  .caract {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 12px;
+
+    > div {
+      
+      &:nth-child(1) {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      &:nth-child(2) {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      &:nth-child(3) {
+        grid-area: 1 / 3 / 2 / 4;
+      }
+      &:nth-child(4) {
+        grid-area: 1 / 4 / 2 / 5;
+      }
+      &:nth-child(5) {
+        grid-area: 1 / 5 / 2 / 6;
+      }
+      &:nth-child(6) {
+        grid-area: 2 / 1 / 3 / 3;
+      }
+      &:nth-child(7) {
+        grid-area: 2 / 3 / 3 / 4;
+       
+      }
+      &:nth-child(8) {
+        grid-area: 2 / 4 / 3 / 6;
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+
+      > div {
+        margin: 0;
+        &:nth-child(7) {
+        display: none;
+       
+      }
+      }
+    }
+  }
+`;
+
+
+
+export const DescricaoProd = styled.div`
   display: grid;
   grid-template-areas:
     "produto  info"
     "produto frete"
     "info2 info2";
   margin-top: 50px;
+
   .image {
     width: 55vw;
     height: auto;
@@ -35,6 +92,10 @@ export const Content = styled.div`
       width: 80%;
       height: 100%;
     }
+    @media (max-width: 768px) {
+      width: 98%;
+      margin: 0 auto 5px;
+    }
   }
   .info {
     background: white;
@@ -42,6 +103,10 @@ export const Content = styled.div`
     margin: auto 10px;
     color: black;
     border-radius: 5px;
+    @media (max-width: 768px) {
+      width: 98%;
+      margin: auto;
+    }
     .infoName {
       width: 60%;
       display: flex;
@@ -160,47 +225,16 @@ export const Content = styled.div`
 
       > input {
         height: 40px;
-        width: 120xp;
+        width: 120px;
         margin: auto;
         border: 1px solid;
         border-color: ${({ theme }) => theme.COLORS.BLUE_600};
       }
     }
   }
-  > .infoCaract {
-    grid-area: info2;
-    margin: auto;
-    > .caract {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 15px;
-      grid-row-gap: 12px;
-      > .div1 {
-        grid-area: 1 / 1 / 2 / 2;
-      }
-      > .div2 {
-        grid-area: 1 / 2 / 2 / 3;
-      }
-      > .div3 {
-        grid-area: 1 / 3 / 2 / 4;
-      }
-      > .div4 {
-        grid-area: 1 / 4 / 2 / 5;
-      }
-      > .div5 {
-        grid-area: 1 / 5 / 2 / 6;
-      }
-      > .div6 {
-        grid-area: 2 / 1 / 3 / 3;
-      }
-      > .div7 {
-        grid-area: 2 / 3 / 3 / 4;
-      }
-      > .div8 {
-        grid-area: 2 / 4 / 3/ 6;
-      }
-    }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
   }
 `;
 

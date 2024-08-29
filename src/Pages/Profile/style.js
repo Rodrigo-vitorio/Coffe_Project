@@ -10,7 +10,7 @@ export const InputsInfo = styled.section`
   display: flex;
   flex-direction: column;
   margin: 20px auto;
-  width: 30vw;
+  width: 30%; 
   gap: 20px;
 
   .selectImg {
@@ -18,25 +18,23 @@ export const InputsInfo = styled.section`
     flex-direction: column;
     align-items: center;
   }
+
   > div {
     display: flex;
 
     > input {
-      font-size: 16px;
-      flex: 1 100%;
+      flex: 1;
       width: 100%;
       height: 30px;
-      outline: none;
+      margin: 0 5px;
+      padding-left: 5px;
+      font-size: 16px;
+      color: white;
+      background: transparent;
       border: none;
       border-bottom: 1px solid white;
-      background: transparent;
-      margin: 0px 5px;
-      color: white;
       border-radius: 2px;
-      padding-left: 5px;
-
-      &:hover::placeholder {
-      }
+      outline: none;
 
       &:focus {
         border: 1px solid white;
@@ -48,6 +46,16 @@ export const InputsInfo = styled.section`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    gap: 15px;
+    padding: 150px;
+  }
+  @media (max-width: 480px) {
+    padding: 50px;
+    
+    }
 `;
 
 export const Check = styled.div`
@@ -63,6 +71,24 @@ export const Check = styled.div`
       width: 25px;
       height: 25px;
       margin-left: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+
+    > p > input {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+
+    > p > input {
+      width: 20px;
+      height: 20px;
     }
   }
 `;
