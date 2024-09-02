@@ -1,10 +1,11 @@
 import styled from "styled-components";
+
 export const Container = styled.div`
   color: white;
+
   nav {
     background: #333;
     overflow: hidden;
-
     display: flex;
     justify-content: start;
     align-items: center;
@@ -14,9 +15,16 @@ export const Container = styled.div`
     list-style-type: none;
     display: flex;
     color: white;
+    padding: 0;
+    margin: 0;
   }
+
   .teste ul {
     display: block;
+  }
+
+  nav li {
+    margin: 0;
   }
 
   nav li a {
@@ -27,16 +35,18 @@ export const Container = styled.div`
     color: white;
     @media (max-width: 768px) {
       font-size: 15px;
+      padding: 12px 14px;
     }
   }
 
   nav li a:hover {
     background-color: ${({ theme }) => theme.COLORS.BROWN_700};
   }
+
   .teste {
     display: flex;
-   
   }
+
   .dropdown:first-child {
     padding-left: 1rem;
   }
@@ -45,7 +55,6 @@ export const Container = styled.div`
     display: none;
     position: absolute;
     background-color: white;
-
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
@@ -66,7 +75,7 @@ export const Container = styled.div`
     font-family: ${({ theme }) => theme.FONTS.OSWALD};
     @media (max-width: 768px) {
       font-size: 14px;
-      padding: 12px;
+      padding: 10px;
     }
   }
 
@@ -78,7 +87,7 @@ export const Container = styled.div`
   h1 {
     font-size: 18px;
     font-family: ${({ theme }) => theme.FONTS.FRAUNCES};
-    padding: 10px 10px 10px 20px;
+    padding: 10px 20px;
     background-color: ${({ theme }) => theme.COLORS.BROWN_700};
     display: flex;
     align-items: center;
@@ -88,6 +97,10 @@ export const Container = styled.div`
     }
     @media (max-width: 768px) {
       font-size: 15px;
+      padding: 10px 15px;
+      > svg {
+        font-size: 16px;
+      }
     }
   }
 `;

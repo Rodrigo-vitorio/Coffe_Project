@@ -6,7 +6,6 @@ export const Container = styled.div`
   display: grid;
   grid-template-rows: 122px auto;
   grid-template-areas: "header" "content";
- 
 
   > main {
     grid-area: content;
@@ -27,8 +26,19 @@ export const Content = styled.div`
     margin: 30px 10px;
 
     > img {
-      width: 90%;
-      height: 90%;
+      height: 75%;
+      width: 55%;
+
+      margin: auto;
+      @media (max-width: 768px) {
+        height: 70%;
+        width: 55%;
+      }
+
+      @media (max-width: 480px) {
+        height: 80%;
+        width: 60%;
+      }
     }
   }
 
@@ -49,7 +59,6 @@ export const Content = styled.div`
     }
   }
 
-  /* Media Queries para Responsividade */
   @media (max-width: 1024px) {
     .showProdutos {
       grid-template-columns: repeat(3, 1fr);
@@ -65,6 +74,49 @@ export const Content = styled.div`
     }
   }
 
+  @media (max-width: 900px) {
+    .showProdutos {
+      grid-template-columns: repeat(auto-fit, minmax(1fr));
+    }
+
+    .carrossel {
+      height: 350px;
+
+      > h1 {
+        font-size: 36px;
+        margin-bottom: 35px;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .showProdutos {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .carrossel {
+      height: 300px;
+
+      > h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .showProdutos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carrossel {
+      height: 300px;
+
+      > h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
   @media (max-width: 768px) {
     .showProdutos {
       grid-template-columns: repeat(2, 1fr);
@@ -74,7 +126,7 @@ export const Content = styled.div`
       height: 300px;
 
       > h1 {
-        font-size: 36px;
+        font-size: 32px;
         margin-bottom: 30px;
       }
     }

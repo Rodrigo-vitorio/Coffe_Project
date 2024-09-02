@@ -8,6 +8,7 @@ export const Container = styled.button`
   border: 1px double #dddddd;
   margin: 20px auto;
   padding: 10px;
+  
 
   > p {
     font-family: ${({ theme }) => theme.FONTS.ABHAYA_LIBRE};
@@ -16,17 +17,21 @@ export const Container = styled.button`
     width: 100%; 
     margin: auto;
     padding-top: 20px;
+    @media (max-width: 480px) {
+    font-size: 18px;
+  }
     
   }
 `;
 
 export const Imagem = styled.div`
-  width: 100%;
-  max-width: 15rem; /* Limita a largura máxima */
+  
+  max-width:15rem; 
   height: 250px;
   background-image: url(${(props) => props.imagemUrl});
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   border: none;
   transition: transform 0.5s ease;
   margin: auto;
@@ -40,6 +45,9 @@ export const Imagem = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 180px; /* Mais redução para telas ainda menores */
+    height: 280px; /* Mais redução para telas ainda menores */
+  }
+  @media (max-width: 480px) {
+    height: 100px; /* Mais redução para telas ainda menores */
   }
 `;

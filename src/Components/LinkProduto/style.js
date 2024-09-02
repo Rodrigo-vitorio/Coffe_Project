@@ -5,18 +5,12 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+
   height: auto;
-  padding: 20px;
-  background-color: #f4f4f4;
+ 
+
   border-radius: 5px;
   box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.75);
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: translateY(-5px);
-  }
-  
 `;
 
 export const Imagem = styled.img`
@@ -26,10 +20,20 @@ export const Imagem = styled.img`
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  margin-bottom: 15px; /* espaço entre imagem e texto */
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+  }
+  @media (max-width: 480px) {
+    width: 80px;
+    height: 100px;
+    margin-bottom: 5px;
+  }
 `;
 
 export const Texto = styled.div`
+
   > h1 {
     font-family: ${({ theme }) => theme.FONTS.OSWALD};
     font-size: 22px;
@@ -37,6 +41,12 @@ export const Texto = styled.div`
     padding: 2px;
     text-align: center;
     font-weight: 500;
-    
+   
+  
+    @media (max-width: 480px) {
+      font-size: 16px;
+    font-weight: 400;
+
+    }
   }
 `;

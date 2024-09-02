@@ -2,11 +2,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
- 
   .link1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    @media (max-width: 780px) {
+      flex-direction: column;
+    
+    }
   }
 
   .link1 > .grao {
@@ -14,7 +18,8 @@ export const Container = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+
+   
   }
 
   .link1 > .especial {
@@ -23,7 +28,6 @@ export const Container = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
   }
 
   .link1 > .moido {
@@ -32,30 +36,32 @@ export const Container = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
   }
 
   .link1 > .square {
-    width: 400px;
-    height: 250px;
-    margin: 66px 0 40px 0;
+    width: 100%;
+    height: auto;
+    margin: 10px 10px;
     border-radius: 10px;
     border: none;
     font-size: 30px;
+    @media (max-width: 780px) {
+      margin: 10px;
+    }
   }
 
   .link1 > .square > p {
     font-family: ${({ theme }) => theme.FONTS.FRAUNCES};
-    width: 113px;
+    width: 30%;
     text-align: left;
-    margin: 25px 0 44px 22px;
-  color: ${({ theme }) => theme.COLORS.WHITE};
-
+    color: ${({ theme }) => theme.COLORS.WHITE};
+    white-space: nowrap;
+    padding: 35px;
   }
 `;
 export const Analisar = styled.div`
-  width: 150px;
-  height: 34px;
-  position: absolute;
-  right: 10px;
+  width: auto;
+  height: auto;
+  float: right;
+  margin: 30px;
 `;

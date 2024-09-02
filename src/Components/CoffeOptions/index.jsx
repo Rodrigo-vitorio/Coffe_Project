@@ -1,5 +1,5 @@
-import {Button} from "../Button";
-import { Container,Analisar } from "./style";
+import { Button } from "../Button";
+import { Container, Analisar } from "./style";
 
 export function CoffeeOptions() {
   const options = [
@@ -15,12 +15,8 @@ export function CoffeeOptions() {
           <div key={option.id} className={`${option.id} square`}>
             <p>{option.label}</p>
             <Analisar>
-             <Button
-              title="Ver produtos"
-              aria-label={`Ver produtos de ${option.label}`}
-            /> 
+              <Button title="Ver produtos" />
             </Analisar>
-            
           </div>
         ))}
       </div>

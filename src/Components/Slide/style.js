@@ -3,33 +3,39 @@ import styled from "styled-components";
 export const Container = styled.section`
   background-image: url("../../../imagens/coffe.png");
   background-size: cover;
-  background-position: center;
-  width: 100%;
+  background-position: center center;
+  background-repeat: repeat;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  position: relative;
-  
+  padding: 100px;
+  @media (max-width: 780px) {
+    padding: 50px;
+    display: block;
+    background-size: cover;
+  }
 
   h1 {
-    width: 308px;
-    height: 147px;
+    width: 30%;
     font-family: "Fraunces", serif;
-    font-size: 40px;
-    position: absolute;
-    top: 120px;
-    left: 70px;
+    font-size: 38px;
+    text-align: justify;
+    @media (max-width: 780px) {
+      font-size: 26px;
+      margin-top: 20px;
+    }
   }
 
   h3 {
-    width: 267px;
-    height: 111px;
+    width: 33%;
     font-family: "Fraunces", serif;
     font-size: 20px;
-    position: absolute;
-    top: 150px;
-    right: 70px;
+    text-align: center;
+
+    @media (max-width: 780px) {
+      font-size: 18px;
+      margin-top: 90px;
+    }
   }
-  
 `;

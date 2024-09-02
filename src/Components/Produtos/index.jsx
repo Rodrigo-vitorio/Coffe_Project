@@ -6,8 +6,7 @@ export function Produtos({
   description,
   price1,
   discount,
-  buttonTitle,
-  title,
+  buttonTitle
 }) {
   return (
     <Container>
