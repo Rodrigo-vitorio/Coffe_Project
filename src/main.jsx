@@ -10,12 +10,13 @@ import { User } from './Pages/User/index.jsx'
 import { ThemeProvider } from 'styled-components'
 import theme from "./Styles/theme.js"
 import Globalstyles from './Styles/global.js'
+import { Security } from './Pages/Security/index.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <Globalstyles/>
-      < Details />
+      < User />
     </ThemeProvider>
   </React.StrictMode>,
 )

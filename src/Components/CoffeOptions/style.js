@@ -53,11 +53,15 @@ export const Container = styled.div`
 
   .link1 > .square > p {
     font-family: ${({ theme }) => theme.FONTS.FRAUNCES};
-    width: 30%;
+   
     text-align: left;
     color: ${({ theme }) => theme.COLORS.WHITE};
+    width: 250px;
     white-space: nowrap;
-    padding: 35px;
+    margin: 30px 0;
+    padding: 5px;
+    border-radius: 5px  5px 0 0 ;
+    background:  #20150D;
   }
 `;
 export const Analisar = styled.div`

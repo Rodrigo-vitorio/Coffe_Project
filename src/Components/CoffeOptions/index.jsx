@@ -4,7 +4,7 @@ import { Container, Analisar } from "./style";
 export function CoffeeOptions() {
   const options = [
     { id: "grao", label: "Café em grão" },
-    { id: "especial", label: "Cafés especiais" },
+    { id: "especial", label: "Café especial" },
     { id: "moido", label: "Café em pó" },
   ];
 
