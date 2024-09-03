@@ -5,12 +5,12 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   height: auto;
- 
-
   border-radius: 5px;
-  box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.75);
+  background: transparent;
+
+
+ 
 `;
 
 export const Imagem = styled.img`
@@ -25,14 +25,21 @@ export const Imagem = styled.img`
   &:hover {
     transform: translateY(-5px);
   }
-  @media (max-width: 480px) {
-    width: 80px;
-    height: 100px;
+  @media (max-width: 1200px) {
+    width: 150px;
+    height: 150px;
     margin-bottom: 5px;
   }
+  @media (max-width: 780px) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    }
+ 
 `;
 
 export const Texto = styled.div`
+    white-space: nowrap;
 
   > h1 {
     font-family: ${({ theme }) => theme.FONTS.OSWALD};
@@ -41,7 +48,10 @@ export const Texto = styled.div`
     padding: 2px;
     text-align: center;
     font-weight: 500;
-   
+    @media (max-width: 780px) {
+      font-size: 16px;
+      font-weight: 400;
+    }
   
     @media (max-width: 480px) {
       font-size: 16px;

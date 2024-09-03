@@ -6,8 +6,8 @@ export const Container = styled.button`
 
   padding: 8px;
   background: ${({ theme }) => theme.COLORS.BLUE_800};
-  border-radius: 10px;
-  font-weight: 500;
+  border-radius: 8px;
+  font-weight: 400;
   font-size: 18px;
   font-family: ${({ theme }) => theme.FONTS.ROBOTO};
   border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
@@ -23,6 +23,10 @@ export const Container = styled.button`
   }
   &:hover {
     background: ${({ theme }) => theme.COLORS.GREEN};
-    transition: .6s;
+    transition: 0.6s;
+  }
+  @media (max-width: 480px) {
+    height: 39px;
+    font-size: 15px;
   }
 `;

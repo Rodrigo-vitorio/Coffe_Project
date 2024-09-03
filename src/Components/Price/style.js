@@ -10,6 +10,13 @@ export const Container = styled.div`
     justify-content: space-between;
     gap: 10px;
     width: 100%;
+    @media (max-width: 600px) {
+      display: block;
+      >h3{
+        text-align: left;
+        margin-bottom: 5px;
+      }
+    }
 
     > h3 {
       font-size: 30px;
@@ -37,10 +44,7 @@ export const Container = styled.div`
     margin-bottom: 10px;
     @media (max-width: 480px) {
       font-size: 12px;
+      margin-bottom: 0;
     }
   }
-
-
-
-  
 `;

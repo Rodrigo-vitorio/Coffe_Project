@@ -37,7 +37,7 @@ export const Content = styled.div`
 
       @media (max-width: 480px) {
         height: 80%;
-        width: 60%;
+        width: 80%;
       }
     }
   }
@@ -134,7 +134,7 @@ export const Content = styled.div`
 
   @media (max-width: 480px) {
     .showProdutos {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
       margin-top: 60px;
     }
 

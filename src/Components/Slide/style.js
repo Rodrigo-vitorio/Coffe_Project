@@ -5,8 +5,8 @@ export const Container = styled.section`
   background-size: cover;
   background-position: center center;
   background-repeat: repeat;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 80vh;
   display: flex;
   justify-content: space-between;
   padding: 100px;
