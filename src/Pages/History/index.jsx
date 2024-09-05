@@ -1,6 +1,7 @@
 import { Container, Content } from "./style";
 import { Header } from "../../Components/Header";
 import { StarRating } from "../../Components/StarRating";
+import {Button} from "../../Components/Button"
 
 export function History() {
     const products = [
@@ -47,6 +48,7 @@ export function History() {
                 <div className="infoID">
                   <p>Status: Em andamento</p>
                   <p>ID SKU: {product.sku}</p>
+                  <Button title="Comprar novamente"/>
                 </div>
               </li>
             ))}

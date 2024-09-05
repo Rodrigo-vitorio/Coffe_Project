@@ -110,7 +110,7 @@ export const LinksAlt = styled.div`
   }
 `;
 
-export const Fade = styled.div`
+export const Hiddem = styled.div`
   .check {
     display: flex;
     align-items: center;
