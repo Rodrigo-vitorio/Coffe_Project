@@ -1,7 +1,7 @@
 import { Container, Content, CarrinhoProd,CarrinhoG, Subtotal, Total } from "./style";
 import { Header } from "../../Components/Header";
 import { Footer } from "../../Components/Footer";
-import { CoffePass } from "../../Components/CoffePass";
+
 import { Button } from "../../Components/Button";
 import { useState } from "react";
 import { IoInformationCircleOutline } from "react-icons/io5";
@@ -135,8 +135,7 @@ export function Carrinho() {
               <p>Total: R${(calcularTotal() + calcularFrete()).toFixed(2)}</p>
               <Button title="Fechar pedido" />
             </Total>
-          </CarrinhoG>
-          <CoffePass />
+          </CarrinhoG>  
         </Content>
       </main>
       <Footer />

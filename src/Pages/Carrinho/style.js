@@ -88,7 +88,7 @@ export const Subtotal = styled.div`
       color: white;
     }
     button.excluir:hover {
-      background-color: #ff0000;
+      background-color: #E53E3E;
       color: white;
     }
   }

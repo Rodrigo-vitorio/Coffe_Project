@@ -7,7 +7,7 @@ import { CoffeeOptions } from "../../Components/CoffeOptions";
 import { Produtos } from "../../Components/Produtos";
 import { Carousel } from "../../Components/Carousel";
 import { Footer } from "../../Components/Footer";
-import { CoffePass } from "../../Components/CoffePass";
+
 
 export function Details() {
   return (
@@ -161,7 +161,7 @@ export function Details() {
               buttonTitle="Compre Agora"
             ></Produtos>
           </div>
-          <CoffePass />
+          
 
           <Footer imageUrl="../../Img/logo (1).png"></Footer>
         </Content>

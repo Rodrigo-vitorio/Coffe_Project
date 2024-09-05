@@ -3,7 +3,7 @@ import { Header } from "../../Components/Header";
 import { Footer } from "../../Components/Footer";
 import { Container, Content, Preparation,DescricaoProd } from "./style";
 import { Caracteristicas } from "../../Components/Caracteristicas";
-import { CoffePass } from "../../Components/CoffePass";
+
 // icones usados
 import { PiShareNetworkDuotone } from "react-icons/pi";
 import { MdFavoriteBorder } from "react-icons/md";
@@ -166,7 +166,7 @@ export function ShowProduct() {
                 </li>
               </ul>
             </Preparation>
-            <CoffePass />
+            
           </div>
         </Content>
         <Footer />

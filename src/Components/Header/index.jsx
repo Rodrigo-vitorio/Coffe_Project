@@ -20,7 +20,11 @@ export function Header() {
         <Logo>
           <img src={LogoImg} alt="Logo da empresa" />
         </Logo>
-        <Bar></Bar>
+        <Bar>
+          <ul>
+            <li><a href="">Home</a></li>
+          </ul>
+        </Bar>
         <Search
           className={`search-container ${isExpanded ? "active" : ""}`}
           onClick={handleSearchClick}
