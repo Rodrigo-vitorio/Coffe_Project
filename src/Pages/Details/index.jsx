@@ -5,7 +5,7 @@ import { Button_links } from "../../Components/Button_links";
 import { LinksProduto } from "../../Components/LinkProduto";
 import { CoffeeOptions } from "../../Components/CoffeOptions";
 import { Produtos } from "../../Components/Produtos";
-import { Carousel } from "../../Components/Carousel";
+
 import { Footer } from "../../Components/Footer";
 
 
@@ -119,10 +119,7 @@ export function Details() {
               buttonTitle="Compre Agora"
             ></Produtos>
           </div>
-          <section className="carrossel">
-            <h1>Blogs para os amantes de café </h1>
-            <Carousel></Carousel>
-          </section>
+          
           <div className="showProdutos">
             <img src="../../../imagens/logo3cor.png" alt="logo fazenda" />
             <Produtos
@@ -163,9 +160,11 @@ export function Details() {
           </div>
           
 
-          <Footer imageUrl="../../Img/logo (1).png"></Footer>
+          
         </Content>
+        <Footer imageUrl="../../Img/logo (1).png"></Footer> 
       </main>
+      
     </Container>
   );
 }

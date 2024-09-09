@@ -20,9 +20,9 @@ export const Container = styled.section`
     }
 
     @media (max-width: 768px) {
-      width: 95vw;
+      width: 60vw;
       padding: 30px;
-    }
+    } 
 
     @media (max-width: 480px) {
       width: 100vw;
@@ -38,16 +38,26 @@ export const Content = styled.section`
   }
   .info {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background: white;
     color: black;
     padding: 10px 30px;
-    margin: 20px 0 ;
+    margin: 10px 0 ;
     .desc>p{
         font-size: 16px;
-        margin: 5px;
+        margin: 9px 5px;
+    }
+    .infoID>p{
+        font-size: 16px;
+        margin: 9px 5px;
     }
     
+    
   }
+  @media (max-width: 768px) {
+      .info{
+        flex-direction: column;
+      }
+    }
 `;

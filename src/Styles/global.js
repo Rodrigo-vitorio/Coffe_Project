@@ -10,6 +10,8 @@ export default createGlobalStyle`
 body{
      background: ${({ theme }) => theme.COLORS.BLUE_800};
      color: ${({ theme }) => theme.COLORS.WHITE};
+     width: auto;
+     height: auto;
 }
 
 a,li{

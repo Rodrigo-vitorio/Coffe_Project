@@ -18,8 +18,11 @@ export const Container = styled.footer`
 
   @media (max-width: 480px) {
     flex-direction: column;
-    justify-content: center;
-    text-align: left;
+    justify-content: start;
+    align-items: flex-start;
+  
+    display: flex;
+    
   }
 
   > .links {

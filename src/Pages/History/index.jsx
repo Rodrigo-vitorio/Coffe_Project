@@ -1,5 +1,6 @@
 import { Container, Content } from "./style";
 import { Header } from "../../Components/Header";
+import { Footer } from "../../Components/Footer";
 import { StarRating } from "../../Components/StarRating";
 import {Button} from "../../Components/Button"
 
@@ -55,6 +56,7 @@ export function History() {
           </ul>
         </Content>
       </main>
+      <Footer></Footer>
     </Container>
   );
 }

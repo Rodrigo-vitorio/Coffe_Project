@@ -15,6 +15,7 @@ export const Container = styled.header`
   @media (max-width: 480px) {
     height: 80px;
     padding: 0 10px;
+    
   }
 
   .top {
@@ -28,6 +29,8 @@ export const Container = styled.header`
 export const Logo = styled.div`
   display: flex;
   align-items: center;
+  width: auto ;
+  height: 100%;
 
   > img {
     width: 4rem;

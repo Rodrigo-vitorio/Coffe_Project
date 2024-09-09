@@ -64,7 +64,6 @@ export function Security() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {link.icon1}
                   {link.text}
                 </a>
                 {link.icon2}
