@@ -3,6 +3,7 @@ import { Header } from "../../Components/Header";
 import { Footer } from "../../Components/Footer";
 import { FaFacebookF, FaGoogle } from "react-icons/fa";
 import {Button} from "../../Components/Button"
+import { Link } from "react-router-dom";
 
 export function SignIn() {
   return (
@@ -32,7 +33,8 @@ export function SignIn() {
               </form>
             </div>
             <div class="signup">
-                Ainda não possui conta ? <a href="#">Cadastrar</a>
+                Ainda não possui conta ? <Link to="/Register">
+                Cadastrar</Link>
               </div>
           </div>
           <Footer />

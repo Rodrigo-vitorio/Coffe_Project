@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const Container = styled.button`
+export const Container = styled(Link)`
   width: 100%;
   height: 49px;
 
@@ -12,11 +13,9 @@ export const Container = styled.button`
   font-family: ${({ theme }) => theme.FONTS.ROBOTO};
   border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
 
-  > a {
-    color: white;
-    text-align: center;
-    white-space: nowrap;
-  }
+  color: white;
+  text-align: center;
+  white-space: nowrap;
 
   &:disabled {
     opacity: 0.5;

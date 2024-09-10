@@ -4,8 +4,8 @@ import LogoImg from "../../Img/logo (1).png";
 import { CiSearch } from "react-icons/ci";
 import { FaUserCircle } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
-import {DropDown} from "../DropDown"
-
+import { DropDown } from "../DropDown";
+import { Link } from "react-router-dom";
 
 export function Header() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -22,13 +22,14 @@ export function Header() {
         </Logo>
         <Bar>
           <ul>
-            <li><a href="">Home</a></li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
           </ul>
         </Bar>
         <Search
           className={`search-container ${isExpanded ? "active" : ""}`}
           onClick={handleSearchClick}
-        
         >
           <input
             type="text"
@@ -37,21 +38,25 @@ export function Header() {
           <CiSearch />
         </Search>
         <Login>
-          <FaUserCircle />
+          <Link to="/User">
+            <FaUserCircle />
+          </Link>
           <div className="user">
             <h1>Minha conta</h1>
             <div className="links">
               <h3>
-                <a href="#">Entrar</a>/
+                <Link to="/SignIn">Entrar/</Link>
               </h3>
               <h3>
-                <a href="#">Cadastrar</a>
+                <Link to="/Register">Cadastrar</Link>
               </h3>
             </div>
           </div>
         </Login>
         <Icone>
-          <TiShoppingCart />
+          <Link to="/Carrinho">
+            <TiShoppingCart />
+          </Link>
         </Icone>
       </div>
       <DropDown />

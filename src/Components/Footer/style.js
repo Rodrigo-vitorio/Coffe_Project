@@ -36,6 +36,9 @@ export const Container = styled.footer`
         color: black;
         font-size: 22px;
       }
+      >p{
+        color: black;
+      }
 
       > a {
         color: black;
