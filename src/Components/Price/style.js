@@ -10,14 +10,15 @@ export const Container = styled.div`
     justify-content: space-between;
     gap: 10px;
     width: 100%;
-    
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       display: block;
 
       h3 {
         text-align: left;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        
       }
     }
 
@@ -35,6 +36,7 @@ export const Container = styled.div`
         font-size: 10px;
         text-align: start;
         font-weight: lighter;
+       
       }
     }
   }
@@ -46,8 +48,11 @@ export const Container = styled.div`
     width: 30%;
     height: 22px;
     margin-bottom: 10px;
-    
 
+    @media (max-width: 768px) {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
     @media (max-width: 480px) {
       font-size: 12px;
       margin-bottom: 0;

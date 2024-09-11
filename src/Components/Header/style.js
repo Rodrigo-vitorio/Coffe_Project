@@ -23,6 +23,12 @@ export const Container = styled.header`
     align-items: center;
     justify-content: space-around;
     padding: 0 40px;
+   @media (max-width: 780px) {
+    padding: 0 20px;
+   }
+   @media (max-width: 780px) {
+    padding: 0 10px;
+   }
   }
 `;
 
@@ -54,21 +60,13 @@ export const Bar = styled.div`
     margin: auto 10px;
   }
 
-  @media (max-width: 768px) {
-    color: red;
-  }
-
-  @media (max-width: 480px) {
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
-  }
-
   li {
     a {
       position: relative;
       text-decoration: none;
       color: white;
+      font-size: 18px;
+
 
       &::after {
         content: "";
@@ -83,6 +81,14 @@ export const Bar = styled.div`
 
       &:hover::after {
         width: 100%;
+      }
+      @media (max-width:768px) {
+        font-size: 16px;
+        
+      }
+      @media (max-width:768px) {
+        font-size: 12px;
+        
       }
     }
   }
@@ -105,7 +111,10 @@ export const Search = styled.div`
   }
 
   @media (max-width: 480px) {
-    width: 100%;
+    width:50%;
+    &.active {
+      flex: 100%;
+    }
   }
 
   > input {

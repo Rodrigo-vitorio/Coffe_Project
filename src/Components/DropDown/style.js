@@ -7,7 +7,7 @@ export const Container = styled.div`
     background: #333;
     overflow: hidden;
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -33,9 +33,17 @@ export const Container = styled.div`
     padding: 14px 16px;
     text-decoration: none;
     color: white;
+    white-space: nowrap;
     @media (max-width: 768px) {
       font-size: 15px;
       padding: 12px 14px;
+      
+    }
+    @media (max-width: 480px) {
+      font-size: 13px;
+      padding: 10px 3px ;
+      
+
     }
   }
 
@@ -49,6 +57,10 @@ export const Container = styled.div`
 
   .dropdown:first-child {
     padding-left: 1rem;
+    @media (max-width: 480px) {
+      padding-left: 0rem;
+
+    }
   }
 
   .dropdown-content {
@@ -98,6 +110,13 @@ export const Container = styled.div`
     @media (max-width: 768px) {
       font-size: 15px;
       padding: 10px 15px;
+      > svg {
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 480px) {
+      font-size: 14px;
+      padding: 5px 10px;
       > svg {
         font-size: 16px;
       }

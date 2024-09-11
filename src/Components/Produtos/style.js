@@ -23,7 +23,7 @@ export const Container = styled.button`
 `;
 
 export const Imagem = styled.div`
-  max-width: 15rem;
+  width: 100%;
   height: 250px;
   background-image: url(${(props) => props.imagemUrl});
   background-size: contain;
@@ -42,10 +42,11 @@ export const Imagem = styled.div`
 
   @media (max-width: 768px) {
     height: 280px;
+    
   }
 
   @media (max-width: 600px) {
-    height: 180px;
+    height: 150px;
   }
 
   @media (max-width: 480px) {

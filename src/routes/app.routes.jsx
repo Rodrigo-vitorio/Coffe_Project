@@ -18,7 +18,7 @@ import{Search} from "../Pages/Search"
 export function AppRoutes(){
     return(
         <Routes>
-            <Route path="/Details" element={<Details/>} />
+            <Route path="/" element={<Details/>} />
             <Route path="/Carrinho" element={<Carrinho/>} />
             <Route path="/History" element={<History/>} />
             <Route path="/Profile" element={<Profile/>} />
@@ -28,7 +28,7 @@ export function AppRoutes(){
             <Route path="/Register" element={<Register/>} />
             <Route path="/SignIn" element={<SignIn/>} />
             <Route path="/Privacy" element={<Privacy/>} />
-            <Route path="/" element={<Search/>} />
+            <Route path="/Search" element={<Search/>} />
 
 
 
