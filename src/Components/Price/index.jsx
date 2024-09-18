@@ -10,7 +10,8 @@ export function Price({ price1, discount, buttonTitle }) {
         <h3>
           {price1} <span>No pix</span>
         </h3>
-        <Button title={buttonTitle} to="/ShowProduct"></Button>
+        <Button title={buttonTitle} to="/ShowProduct">
+        <a href="#"></a></Button>
       </div>
     </Container>
   );

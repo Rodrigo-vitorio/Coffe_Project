@@ -39,12 +39,17 @@ export const Content = styled.div`
     }
 
     > img {
-      height: 75%;
-      width: 55%;
+      height: 90%;
+      width: 90%;
       margin: auto;
+      @media (max-width: 900px) {
+        height: 90%;
+        width: 80%;
+      }
 
       @media (max-width: 768px) {
-        height: 70%;
+        height: 100%;
+        width: 100%;
       }
       @media (max-width: 480px) {
         height: 80%;

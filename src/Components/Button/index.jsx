@@ -1,9 +1,11 @@
 import { Container } from "./Style";
 
-export function Button({ title, ...rest }) {
+export function Button({ title, to, ...rest }) {
   return (
-    <Container type="Button" {...rest} >
-     <a href="#">{title}</a> 
+    <Container to={to} {...rest}>
+      <button>
+        <a>{title}</a> 
+      </button>
     </Container>
   );
 }

@@ -27,8 +27,8 @@ export function SignIn() {
                 <input type="text" placeholder="Email" required />
                 <input type="password" placeholder="Senha" required />
                 <a class="forgot">Esqueceu sua senha?</a>
-                <Button  type="submit" title="Entrar">
-                  Entrar
+                <Button title="Entrar">
+                  
                 </Button>
               </form>
             </div>

@@ -15,7 +15,6 @@ export const Container = styled.header`
   @media (max-width: 480px) {
     height: 80px;
     padding: 0 10px;
-    
   }
 
   .top {
@@ -23,19 +22,19 @@ export const Container = styled.header`
     align-items: center;
     justify-content: space-around;
     padding: 0 40px;
-   @media (max-width: 780px) {
-    padding: 0 20px;
-   }
-   @media (max-width: 780px) {
-    padding: 0 10px;
-   }
+    @media (max-width: 780px) {
+      padding: 0 20px;
+    }
+    @media (max-width: 780px) {
+      padding: 0 10px;
+    }
   }
 `;
 
 export const Logo = styled.div`
   display: flex;
   align-items: center;
-  width: auto ;
+  width: auto;
   height: 100%;
 
   > img {
@@ -67,7 +66,6 @@ export const Bar = styled.div`
       color: white;
       font-size: 18px;
 
-
       &::after {
         content: "";
         position: absolute;
@@ -82,13 +80,11 @@ export const Bar = styled.div`
       &:hover::after {
         width: 100%;
       }
-      @media (max-width:768px) {
+      @media (max-width: 768px) {
         font-size: 16px;
-        
       }
-      @media (max-width:768px) {
+      @media (max-width: 768px) {
         font-size: 12px;
-        
       }
     }
   }
@@ -111,7 +107,7 @@ export const Search = styled.div`
   }
 
   @media (max-width: 480px) {
-    width:50%;
+    width: 50%;
     &.active {
       flex: 100%;
     }
@@ -148,8 +144,9 @@ export const Login = styled.div`
   align-items: center;
   justify-content: center;
 
-  > svg {
-    font-size: 50px;
+  >a{
+    > svg {
+    font-size: 45px;
     color: white;
     @media (max-width: 768px) {
       font-size: 2rem;
@@ -158,6 +155,7 @@ export const Login = styled.div`
         color: ${({ theme }) => theme.COLORS.BROWN_700};
       }
     }
+  }
   }
 
   > .user {
@@ -208,12 +206,14 @@ export const Login = styled.div`
   }
 `;
 export const Icone = styled.div`
-  > svg {
-    font-size: 3rem;
-    cursor: pointer;
-
-    &:hover {
-      color: ${({ theme }) => theme.COLORS.BROWN_700};
+  > a {
+    > svg {
+      font-size: 3rem;
+      cursor: pointer;
+      color: white;
+      &:hover {
+        color: ${({ theme }) => theme.COLORS.BROWN_700};
+      }
     }
 
     @media (max-width: 768px) {

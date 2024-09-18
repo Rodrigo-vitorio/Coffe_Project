@@ -96,8 +96,8 @@ export const Content = styled.div`
     color: white;
     width: 140px;
     &:hover {
-      transform: scale(1.1,1.2);
-      transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transform: scale(1.05);
+     
     }
   }
 

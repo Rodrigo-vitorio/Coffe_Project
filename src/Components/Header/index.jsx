@@ -48,7 +48,7 @@ export function Header() {
                 <Link to="/SignIn">Entrar/</Link>
               </h3>
               <h3>
-                <Link to="/Register">Cadastrar</Link>
+                <Link to="/Dashboard">Cadastrar</Link>
               </h3>
             </div>
           </div>
