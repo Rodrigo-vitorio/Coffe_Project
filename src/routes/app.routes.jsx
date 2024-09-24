@@ -12,7 +12,7 @@ import { SignIn } from "../Pages/SignIn";
 import { Privacy } from "../Pages/Privacy";
 import { Search } from "../Pages/Search";
 import { ShowMachine } from "../Pages/ShowMachine";
-import { Dashboard } from "../Pages/Dashboard";
+import { Vendas } from "../Pages/Dashboard/Vendas";
 
 export function AppRoutes() {
   return (
@@ -29,7 +29,7 @@ export function AppRoutes() {
       <Route path="/Privacy" element={<Privacy />} />
       <Route path="/Search" element={<Search />} />
       <Route path="/ShowMachine" element={<ShowMachine />} />
-      <Route path="/Dashboard" element={<Dashboard />} />
+      <Route path="/Vendas" element={<Vendas />} />
 
     </Routes>
   );
