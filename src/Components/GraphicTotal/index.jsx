@@ -21,7 +21,7 @@ export const GraphicTotal = () => {
           dataKey="value"
           nameKey="name"
           cx="50%"
-          cy="50%"
+          cy="40%"
           outerRadius={70}
           fill="#8884d8"
           label
