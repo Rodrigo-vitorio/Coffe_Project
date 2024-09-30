@@ -56,7 +56,7 @@ export const ListItem = styled.li`
   }
 
   svg {
-    margin-right: 10px; // espaçamento entre o ícone e o texto
+    margin-right: 10px;
    color: ${({theme})=>theme.COLORS.BLUE_800};
     font-size: 1.5rem;
     

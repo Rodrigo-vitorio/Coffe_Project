@@ -14,35 +14,42 @@ export const Container = styled.section`
 `;
 export const Sidebar = styled.section`
   grid-area: sidebar; /* Liga o elemento à área definida */
-
+  border-radius: 5px;
   margin: 20px;
   background: white;
+  >h2{
+    color: black;
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid black;
+  user-select: none;
+  }
 
-  >ul{
+  > ul {
     list-style-type: none;
     margin-top: 20px;
     background: white;
-    >label{
-      padding: 30px;
+    > li {
+      &:hover {
+        background: #d9d9d9;
+      }
+
+      > a {
+        color: #343a40;
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 25px 30px;
+      }
     }
-    >li{
-     padding: 30px;
-     &:hover{
-      background: #D9D9D9;
-     }
-     >a{
-      width: 100%;
-      display: block;
-      height: 100%;
-      color: red;
-      text-align: center;
-     }
+    li.selected {
+      background: #d9d9d9;
     }
   }
 `;
 export const Info = styled.section`
-  grid-area: info; /* Liga o elemento à área definida */
-
+  grid-area: info;
+  border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
@@ -55,6 +62,12 @@ export const Info = styled.section`
       margin-left: 50px;
       color: black;
       font-size: 1rem;
+      > span {
+        background: black;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+      }
     }
   }
   .square:last-child {
@@ -66,14 +79,14 @@ export const Users = styled.section`
   background: white;
   margin: 20px;
 
-  border-radius: 10px;
+  border-radius: 5px;
   > h1 {
     color: black;
     padding: 20px 20px 0 20px;
     font-size: 30px;
   }
   > ul {
-  padding: 0 20px 80px 20px;
+    padding: 0 20px 80px 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -81,8 +94,7 @@ export const Users = styled.section`
     > li {
       width: 150px;
       height: 150px;
-     
-      
+
       > p {
         margin-top: 5px;
         color: black;
@@ -106,5 +118,28 @@ export const Users = styled.section`
   }
 `;
 export const Orders = styled.section`
-  grid-area: orders; /* Liga o elemento à área definida */
+  grid-area: orders;
+  margin: 20px;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  > table {
+    border-collapse: collapse;
+    margin: 20px;
+    > th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px 52px;
+    } 
+    thead tr th{
+      padding-bottom:10px;
+    }
+
+  }
+
 `;

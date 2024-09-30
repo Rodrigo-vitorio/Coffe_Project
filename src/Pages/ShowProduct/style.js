@@ -23,6 +23,7 @@ export const Content = styled.div`
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 15px;
     grid-row-gap: 12px;
+    margin: auto 20px;
 
     > div {
       
@@ -77,6 +78,7 @@ export const DescricaoProd = styled.div`
     "produto frete"
     "info2 info2";
   margin-top: 50px;
+  
 
   .image {
     width: 55vw;
@@ -243,7 +245,8 @@ export const Preparation = styled.div`
   padding: 30px;
   border-radius: 5px;
   color: black;
-  margin: 20px 0;
+  margin: 20px 10px;
+
 
   > h2 {
     text-align: center;
